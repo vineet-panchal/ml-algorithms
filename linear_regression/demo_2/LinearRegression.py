@@ -15,10 +15,6 @@ Steps:
 - Use the trained model to predict the profit of a restaurant in a city with a population of 18.
 '''
 
-import os
-print("Current working directory:", os.getcwd())
-os.chdir("/Users/vineetpanchal/Desktop/MY_STUFF/VPrograms/ml-algorithms/linear_regression/demo_2")
-
 import pandas
 from sklearn import linear_model
 import matplotlib.pyplot as plt

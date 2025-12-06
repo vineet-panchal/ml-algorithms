@@ -54,6 +54,7 @@ yPred = reg.predict(xTrain)
 plt.scatter(xTrain, yPred, color = 'r')
 # plots the fitted values (in red) on top of the black training points
 
+plt.savefig("linear-regression-demo1.png")
 plt.show()
 # this shows how well the red regression line follows the actual points
 # the red line approximates the trend of the black dots

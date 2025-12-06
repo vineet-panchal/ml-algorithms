@@ -2,7 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import Normalizer
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 
 # Load the data
 ccdefault = pd.read_csv(r'ccdefault.csv')
@@ -29,3 +30,11 @@ yPred = clf.predict(xTest_norm)
 
 # Report the accuracy of the classifier on the test data
 print("Accuracy:", round(accuracy_score(yTest, yPred)*100), '%')
+
+# Plot confusion matrix
+cm = confusion_matrix(yTest, yPred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['No Default', 'Default'])
+disp.plot(cmap=plt.cm.Blues)
+plt.title('Confusion Matrix for KNN Classifier')
+plt.savefig("confusion-matrix-for-knn-classifier.png")
+plt.show()

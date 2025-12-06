@@ -10,7 +10,6 @@ import pandas
 from sklearn import linear_model
 import matplotlib.pyplot as plt
 
-
 # Load the data from the file 'LogisticRegressionData.csv' in a pandas dataframe. Make sure all the instances 
 # are imported properly. Name the first feature 'Score1', the second feature 'Score2', and the class 'y'
 data = pandas.read_csv("LogisticRegressionData.csv", header = None, names=['Score1', 'Score2', 'y'])
@@ -27,7 +26,7 @@ fig = plt.figure()
 for i in range(len(data)):
     plt.scatter(data['Score1'][i], data['Score2'][i], marker=m[data['y'][i]], color = c[data['y'][i]])
 fig.canvas.draw()
-
+plt.savefig("scatter1.png")
 # Train a logistic regression classifier to predict the class labels y using the features X
 regS = linear_model.LogisticRegression()
 regS.fit(X, y)
@@ -43,5 +42,6 @@ fig = plt.figure()
 for i in range(len(data)):
     plt.scatter(data['Score1'][i], data['Score2'][i], marker=m[y_pred[i]], color = c[y_pred[i]])
 fig.canvas.draw()
+plt.savefig("scatter2.png")
 plt.show()
 # Notice that some of the training instances are not correctly classified. These are the training errors.

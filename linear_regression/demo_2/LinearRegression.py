@@ -46,6 +46,7 @@ y_pred = reg.predict(X)
 plt.scatter(X, y, c='b') 
 plt.plot(X, y_pred, 'r') 
 fig.canvas.draw()
+plt.savefig("linear-regression-demo2.png")
 plt.show()
 
 print("The linear relationship between X and y was modeled according to the equation: y = b_0 + X*b_1, \

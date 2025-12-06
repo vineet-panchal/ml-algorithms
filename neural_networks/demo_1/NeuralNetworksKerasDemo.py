@@ -75,5 +75,6 @@ for i in range(10):
     plt.subplot(5, 2, i + 1)
     plt.title('Predicted label: ' + str(np.argmax(y_pred[i]))) #6 points
     plt.imshow(x_test[i], cmap='gray') #6 points
-    plt.axis('off')  
+    plt.axis('off')
+plt.savefig("neural-networks-keras.png")  
 plt.show()

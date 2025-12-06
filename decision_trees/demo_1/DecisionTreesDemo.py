@@ -70,6 +70,7 @@ class_names = [str(c) for c in sorted(yTrain.unique())]
 fig = plt.figure(figsize=(12, 8))
 tree.plot_tree(clf, feature_names=feature_names, class_names=class_names, filled=True, rounded=True)
 plt.title("Decision Tree")
+plt.savefig("decision-tree-demo1.png")
 plt.show()
 # display the decision tree
 

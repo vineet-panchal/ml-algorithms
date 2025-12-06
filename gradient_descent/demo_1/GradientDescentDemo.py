@@ -65,6 +65,6 @@ plt.plot(X, yPred, color = 'r')
 # black points is the actual data
 # red line is the regression line found via gradient descent
 # we should see a downward-sloping line (since y decreases as X increases)
-
+plt.savefig("gradient-descent-demo1.png")
 plt.show()
 # display it

@@ -1,3 +1,4 @@
+
 '''
 This demo builds directly on top of the Gradient Descent demo, but it adds one very important concept: feature scaling (or normalization).
 
@@ -72,6 +73,7 @@ yPred = beta0 + beta1*xScaled
 
 plt.scatter(X,y)
 plt.plot(X, scalerY.inverse_transform(yPred), color = 'r')
+plt.savefig("gradient-descent-with-normalization-demo1.png")
 # plot the results, original data as black points
 # plot the regression line in red
 

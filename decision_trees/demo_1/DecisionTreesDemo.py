@@ -15,6 +15,9 @@ The Wine Dataset:
 - there is a label that says which type of wine it is (Class 1, 2, or 3)
 '''
 
+import os
+print("Current working directory:", os.getcwd())
+os.chdir("/Users/vineetpanchal/Desktop/MY_STUFF/VPrograms/ml-algorithms/decision_trees/demo_1")
 
 import pandas as pd # for loading and handling tabular data (like Excel sheets)
 from sklearn import tree # the module in scikit-learn that provides decision tree algorithms

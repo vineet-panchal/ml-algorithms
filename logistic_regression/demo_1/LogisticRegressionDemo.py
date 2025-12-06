@@ -6,6 +6,9 @@ results of a first round of interview (which consisted of two technical question
 The training instances consist of the two exam scores of each applicant, as well as the hiring decision.
 '''
 
+import os
+print("Current working directory:", os.getcwd())
+os.chdir("/Users/vineetpanchal/Desktop/MY_STUFF/VPrograms/ml-algorithms/logistic_regression/demo_1")
 
 import pandas
 from sklearn import linear_model

@@ -1,5 +1,3 @@
-### PART 1 ###
-
 # Step 1: Importing required libraries
 from sklearn import datasets # gives access to built-in datasets (like breast cancer wisconsin dataset)
 import matplotlib.pyplot as plt # used for plotting the decision tree and graphs

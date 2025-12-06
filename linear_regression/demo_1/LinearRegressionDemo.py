@@ -12,10 +12,6 @@ Essentially, this demo:
 This demo is a real implementation of Linear Regression from 3 - Supervised Learning: Model Overfitting, Regression, and Gradient Descent
 '''
 
-import os
-print("Current working directory:", os.getcwd())
-os.chdir("/Users/vineetpanchal/Desktop/MY_STUFF/VPrograms/ml-algorithms/linear_regression/demo_1")
-
 import numpy as np # handles arrays and numerical operations
 import matplotlib.pyplot as plt # for plotting data and fitted lines
 from sklearn.model_selection import train_test_split # splits dataset into training/testing parts
